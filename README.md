@@ -76,3 +76,9 @@ tanzu space get $sp
 tanzu space delete orf-auto-space1
 ```
 
+
+Docs used
+```
+https://github.com/Tanzu-Solutions-Engineering/tanzu-platform-workshop/blob/main/advanced-topics/helm-charts-dockerfiles.md
+https://docs.vmware.com/en/VMware-Tanzu-Platform/services/create-manage-apps-tanzu-platform-k8s/getting-started-create-app-envmt.html
+```
