@@ -70,4 +70,9 @@ cat auto-space.yaml
 yes | tanzu deploy --only auto-space.yaml
 tanzu space get $sp
 ```
+### Clean up of Tanzu Platform Space
+
+```
+tanzu space delete orf-auto-space1
+```
 
