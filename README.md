@@ -3,8 +3,9 @@
 This will try to answer if all the 3 previous of my write ups can be done via Tanzu CLI commands
 
 * (1) Create a Tanzu Platform Project
-* (2) Create a Tanzu Platform Space
-* (3) 
+* (2) Create a Tanzu Platform Space (Delete)
+* (3) Create a Tanzu Platform Profile (working on it)
+
 
 ## Create a Tanzu Platform Project
 
@@ -115,7 +116,7 @@ cat auto-space.yaml
 yes | tanzu deploy --only auto-space.yaml
 tanzu space get $sp
 ```
-### Clean up of Tanzu Platform Space
+### Tanzu Platform Space delete
 
 ```
 tanzu space delete orf-auto-space1
