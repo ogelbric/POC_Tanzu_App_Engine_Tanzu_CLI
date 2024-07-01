@@ -39,7 +39,7 @@ spec:
 EOF
 #
 sed -i "s/orf-auto-profile1/$prof/g"  auto-profile.yaml
-cat auto-space.yaml
+cat auto-profile.yaml
 #
 yes | tanzu profile create -f auto-profile.yaml
 tanzu profile get  $prof
