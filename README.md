@@ -2,6 +2,51 @@
 
 This will try to answer if all the 3 previous of my write ups can be done via Tanzu CLI commands
 
+(1) reate a Tanzu Platform Project
+(2) Create a Tanzu Platform Space
+(3) 
+
+## Create a Tanzu Platform Project
+
+```
+ cat auto-project-creation.sh
+export proj="orf-auto-project"
+export org="sa-tanzu-platform"
+#export cl="orfclustergroup"
+export sp="orf-auto-space1"
+export w=''
+#export w='--wide'
+export line="-----------------------------------------------------------------"
+yes | tanzu context delete $org
+source ~/tanzucli.src
+tanzu login
+#
+export p1=orf-custom-networking
+export p2=orfprofile1
+export t1=orfstarget79
+export sp="orf-auto-space3"
+#
+tanzu project unset
+
+cat <<EOF >auto-project.yaml
+---
+apiVersion: ucp.tanzu.vmware.com/v1
+kind: Project
+metadata:
+  name: orf-project
+spec:
+  lastModifiedDate: null
+EOF
+#
+sed -i "s/orf-project/$proj/g"  auto-project.yaml
+cat auto-project.yaml
+#
+tanzu project create -f auto-project.yaml
+#yes | tanzu project create -f auto-project.yaml
+tanzu project use $proj
+#
+```
+
 ## Create a Tanzu Platform Space
 
 ### Env setup and login
