@@ -2,7 +2,7 @@
 
 This will try to answer if all the 3 previous of my write ups can be done via Tanzu CLI commands
 
-* (1) reate a Tanzu Platform Project
+* (1) Create a Tanzu Platform Project
 * (2) Create a Tanzu Platform Space
 * (3) 
 
